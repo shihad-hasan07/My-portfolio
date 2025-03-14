@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Iansui&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Sacramento&display=swap');
 @import "tailwindcss";
+
+html {
+   scroll-behavior: smooth;
+}
 
 @theme {
    --font-navLogo: "Kaushan Script", cursive;
    --font-tartiaray: 'Nunito', sans-serif;
-
-
-   /* --text: #ffffff;
-   --background: #150c1d;
-   --primary: #3621c0;
-   --secondary: #2820b1;
-   --accent: #9292c4; */
+   --font-helloIAm: "Sacramento", cursive;
+   --font-name: "Outfit", sans-serif;
+   --font-underName: "Iansui", cursive;
 }
+
+
+/* --text: #ffffff;
+--background: #150c1d;
+--primary: #3621c0;
+--secondary: #2820b1;
+--accent: #9292c4; */
