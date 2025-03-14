@@ -36,7 +36,8 @@ const Hero = () => {
                             <RotatingText texts={['Front-end developer.', 'Junior web developer.', 'Mern-stack developer.']}
                                 mainClassName="font-bold ml-2 px-3 py-0.5 bg-blue-400 text-black justify-center rounded-[5px]" staggerFrom={"first"} initial={{ y: "100%" }} animate={{ y: 0 }} exit={{ y: "-100%" }} staggerDuration={0.025} splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1" transition={{ type: "spring", damping: 50, stiffness: 400 }} rotationInterval={3000} />
                         </p>
-                        <p className='lg:w-[700px] font-underName mt-7 tracking-wide'>Creative and detail-oriented Web Developer with a passion for front-end development. Passionate about designing and developing websites that are simple, fast, and visually appealing. Dedicated to crafting intuitive and engaging user experiences that work seamlessly on all devices while continuously learning and improving skills</p>
+                        <p className='lg:w-[700px] font-underName mt-7 tracking-wide'>
+                        Creative and detail-oriented Front-End Developer passionate about building fast, simple, and visually appealing websites. Dedicated to crafting seamless user experiences while continuously learning and improving skills.</p>
                         <p className='mt-7'><Button variant="outlined" endIcon={<FaCloudDownloadAlt />} sx={{ borderColor: "rgb(59, 130, 246)", color: "rgb(155, 130, 246)", transition: "all 0.4s ease-in-out", "&:hover": { backgroundColor: "rgb(59, 130, 246)", color: "white", }, padding: "8px 16px", }}>
                             Download Resume</Button>
                         </p>

@@ -31,7 +31,7 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <div className='hidden lg:flex items-center'>
                 <ul className='flex lg:gap-1 xl:gap-2 text-lg font-tartiaray font-bold'>
-                    {["Home", "About", "Education", "Skills", "Projects", "Contact"].map((item) => (
+                    {["Home", "About Me", "Skills", "Projects", "Contact"].map((item) => (
                         <li key={item}>
                             <a className='hover:border-b tracking-wide hover:bg-[#1b1249] px-4 py-2 rounded-md' href={`#${item.toLowerCase()}`}>
                                 {item}
