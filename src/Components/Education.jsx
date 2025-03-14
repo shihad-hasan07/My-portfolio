@@ -2,9 +2,8 @@ import React from 'react';
 
 const Education = () => {
     return (
-        <div className='bg-yellow-100 h-96' id='education'>
-            educatr
-
+        <div className='text-5xl text-white h-96 bg-[#1e0e31]' id='about'>
+            Education section
         </div>
     );
 };

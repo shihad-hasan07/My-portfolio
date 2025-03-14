@@ -17,7 +17,7 @@ const gradientMapping = {
   
     return (
       <div
-        className={`grid gap-[3em] grid-cols-2 md:grid-cols-3  py-[2em] overflow-visible ${className || ""
+        className={`grid gap-[3em] grid-cols-3  py-[2em] overflow-visible ${className || ""
           }`}
       >
         {items.map((item, index) => (

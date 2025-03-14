@@ -14,8 +14,58 @@ html {
 }
 
 
-/* --text: #ffffff;
---background: #150c1d;
---primary: #3621c0;
---secondary: #2820b1;
---accent: #9292c4; */
+.home-img .img-box {
+   position: relative;
+   /* width: 90vw;
+   height: 90vw; */
+   border-radius: 50%;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after{
+   content:'';
+   position: absolute;
+   width: 10000px;
+   height: 10000px;
+   background: conic-gradient(transparent,transparent,
+   transparent,#7cf03d);
+   transform: rotate(0deg);
+   animation: rotate-border 10s linear infinite;
+}
+.home-img .img-box::after{
+   animation-delay: -5s;
+}
+
+@keyframes rotate-border{
+   100%{
+      transform: rotate(360deg);
+   }
+}
+
+.home-img .img-box .img-item {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background: #160d1e;
+   border-radius: 50%;
+   border: 0.1px solid #160d1e;
+   display: flex;
+   justify-content: center;
+   z-index: 1;
+   overflow: hidden;
+}
+.home-img .img-box .img-item img{
+   position: absolute;
+   transform: scale(1.8);
+   left: 33px;
+   bottom: -130px;
+   display: block;
+   width: 100%;
+   object-fit: cover;
+   /* mix-blend-mode:soft-; */
+}
