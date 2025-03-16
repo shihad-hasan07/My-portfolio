@@ -1,0 +1,134 @@
+:root {
+    --htmlpercent: 95;
+    --csspercent: 75;
+    --tailwindpercent: 90;
+    --jspercent: 60;
+    --reactpercent: 70;
+
+
+    --high_color: #c418ca;  /* 100-90 */
+    --mid_color: #181bb3;   /* 90-85 */ 
+    --lowmin_color: rgb(117, 26, 26);   /* 85- 80*/
+    --low_color: #c51818;   /* 80-75 */
+    --criticallow_color: #ff0000;   /* less than 75 */
+}
+
+.skills li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px; */
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.skills li :where(.circle, svg) {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.skills li svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+}
+
+/* all skill circle-based percentage */
+.skills li.html svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--htmlpercent)) /100);
+}
+.skills li.css svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--csspercent)) /100);
+}
+.skills li.tailwind svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--tailwindpercent)) /100);
+}
+.skills li.js svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--jspercent)) /100);
+}
+.skills li.react svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--reactpercent)) /100);
+}
+
+.skills li svg {
+    transform: rotate(270deg);
+}
+.skills li .circle .inside {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 25px;
+    background-color: #37175e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills li .circle .inside::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    opacity: 10%;
+    border-radius: 50%;
+    transform: scale(1.41);
+    z-index: -1;
+}
+.skills li .circle .inside span {
+    display: flex;
+    font-size: 18px;
+    color: rgb(181, 153, 231);
+}
+.skills li .circle .dot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.skills li .circle .dot::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* percentage wise dots */
+.skills li.html .circle .dot {
+    transform: rotate(calc(3.6deg * var(--htmlpercent)));
+}
+.skills li.css .circle .dot {
+    transform: rotate(calc(3.6deg * var(--csspercent)));
+}
+.skills li.tailwind .circle .dot {
+    transform: rotate(calc(3.6deg * var(--tailwindpercent)));
+}
+.skills li.js .circle .dot {
+    transform: rotate(calc(3.6deg * var(--jspercent)));
+}
+.skills li.react .circle .dot {
+    transform: rotate(calc(3.6deg * var(--reactpercent)));
+}
+
+/* dot color */
+.skills li .circle .dot::before {
+    background-color: white;
+    box-shadow: 100 100 100px red;
+}
+.skills li h4 {
+    color: white;
+}

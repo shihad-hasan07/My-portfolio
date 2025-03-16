@@ -54,7 +54,7 @@ const Navbar = () => {
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-3 pointer-events-none"}`}
                 >
                     <ul className="text-white text-lg font-tartiaray font-semibold flex flex-col">
-                        {["Home", "About", "Education", "Skills", "Projects", "Contact"].map((item) => (
+                        {["Home", "About Me", "Skills", "Projects", "Contact"].map((item) => (
                             <li key={item} onClick={() => setMenuOpen(false)}>
                                 <a className="block px-4 py-2 hover:bg-[#332142] rounded-md" href={`#${item.toLowerCase()}`}>
                                     {item}

@@ -11,8 +11,8 @@ const About = () => {
 
 
     return (
-        <div className='-mt-2 bg-[#1e0e31]' id='about me'>
-            <section className="bg-[#1e0e31] text-white py-20  px-6 sm:px-12 md:px-16 lg:px-28 ">
+        <div className='-mt-2' id='about me'>
+            <section className="bg-[#1e0e31] text-white py-20 px-6 sm:px-12 md:px-16 lg:px-28 ">
                 <div className="max-w-5xl mx-auto">
 
                     {/* Section Heading */}
@@ -65,15 +65,13 @@ const About = () => {
                         <h3 className="text-2xl font-semibold text-purple-400 mb-4">🎓 Education</h3>
 
                         {/* Diploma */}
-                        <div className="bg-[#211341] bg-opacity-30 px-5 py-4 rounded-lg  hover:shadow-[0px_0px_20px_rgba(0,28,100,30.25)] shadow-[#ffffff1c]  mb-4
-                        transition-transform duration-200 hover:scale-[100.3%]">
+                        <div className="bg-[#211341] bg-opacity-30 px-5 py-4 rounded-lg mb-4">
                             <p className="text-white font-semibold text-3xl lg:text-4xl xl:text-[40px]">Diploma in Computer Science & Technology</p>
                             <p className="text-gray-300 text-sm lg:text-base pt-2">Rangpur Polytechnic Institute (2022 - 2025)</p>
                         </div>
 
                         {/* SSC */}
-                        <div className="bg-[#211341] bg-opacity-50 px-5 py-4 rounded-lg  hover:shadow-[0px_0px_20px_rgba(0,28,100,30.25)] shadow-[#ffffff1c] 
-                        transition-transform duration-200 hover:scale-[100.3%]">
+                        <div className="bg-[#211341] bg-opacity-50 px-5 py-4 rounded-lg">
                             <p className="text-white font-semibold text-3xl lg:text-4xl xl:text-[40px]">Secondary School Certificate (SSC) – Science</p>
                             <p className="text-gray-300 text-sm lg:text-base pt-2">Completed in 2021 | GPA: 5.00</p>
                         </div>

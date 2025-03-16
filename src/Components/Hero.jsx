@@ -6,13 +6,15 @@ import { FaCloudDownloadAlt, FaGithubSquare } from 'react-icons/fa';
 import GlassIcons from './fancy_design/GlassIcons'
 import { SiLinkedin } from 'react-icons/si';
 import { BsTwitterX } from 'react-icons/bs';
+import { MdOutlineEmail } from "react-icons/md";
 
 const Hero = () => {
 
     const items = [
-        { icon: <a href="https://www.github.com/shihad-hasan07/" target='_blank'><FaGithubSquare size={32} /></a>, color: 'indigo', label: 'Github' },
-        { icon: <a href="https://www.linkedin.com/in/shihad-hasan07/" target='_blank'><SiLinkedin size={28} /></a>, color: 'blue', label: 'Linked in' },
-        { icon: <a href=""><BsTwitterX size={22} /></a>, color: 'purple', label: 'X' },
+        { icon: <a href="https://www.github.com/shihad-hasan07/" target='_blank'><FaGithubSquare size={32} className='rounded-3xl' /></a>, color: 'indigo', label: 'Github' },
+        { icon: <a href="https://www.linkedin.com/in/shihad-hasan07/" target='_blank'><SiLinkedin size={29} className='rounded-md' /></a>, color: 'blue', label: 'Linked in' },
+        // { icon: <a href=""><BsTwitterX size={22} /></a>, color: 'purple', label: 'X' },
+        { icon: <a href="https://mail.google.com/mail/?view=cm&to=shihadhasan607255@gmail.com" target='_blank'><MdOutlineEmail size={27} /></a>, color: 'purple', label: 'Email' },
     ];
 
     return (
@@ -49,8 +51,8 @@ const Hero = () => {
 
                     <div className='mt-2 lg:mt-18 home-img flex justify-center items-center'>
                         <div className='img-box  
-                        w-[80vw] sm:w-[70vw] md:w-[55vw] lg:w-[55vw] xl:w-[27vw] 2xl:w-[30vw]
-                        h-[80vw] sm:h-[70vw] md:h-[55vw] lg:h-[55vw] xl:h-[27vw] 2xl:h-[30vw]
+                        w-[90vw] sm:w-[70vw] md:w-[55vw] lg:w-[55vw] xl:w-[27vw] 2xl:w-[30vw]
+                        h-[90vw] sm:h-[70vw] md:h-[55vw] lg:h-[55vw] xl:h-[27vw] 2xl:h-[30vw]
                         '>
                             <div className='img-item '>
                                 <img src="/assets/Adobe Express - file.png" alt=""
