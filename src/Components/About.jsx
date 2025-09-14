@@ -36,7 +36,7 @@ const About = () => {
                             in <b>front-end development</b>, I love bringing ideas to life using modern web technologies.
                         </p>
                         <p>
-                            My focus is on <b>creating clean, efficient, and visually appealing websites</b>
+                            My focus is on <b>creating clean, efficient, and visually appealing websites </b> 
                             that provide seamless user experiences across all devices.
                         </p>
                     </motion.div>

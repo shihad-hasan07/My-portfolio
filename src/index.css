@@ -73,11 +73,10 @@ html {
 
 .home-img .img-box .img-item img {
    position: absolute;
-   transform: scale(1.8);
+   /* transform: scale(.9); */
    left: 33px;
    bottom: -130px;
    display: block;
    width: 100%;
    object-fit: cover;
-   /* mix-blend-mode:soft-; */
 }

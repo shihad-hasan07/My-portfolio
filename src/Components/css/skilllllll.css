@@ -4,6 +4,10 @@
     --tailwindpercent: 90;
     --jspercent: 60;
     --reactpercent: 70;
+    --firebasepercent: 82;
+    --gitpercent: 75;
+    --expresspercent: 30;
+    
 
 
     --high_color: #c418ca;  /* 100-90 */
@@ -56,6 +60,17 @@
 .skills li.react svg circle {
     stroke-dashoffset: calc(440 - (440 * var(--reactpercent)) /100);
 }
+.skills li.firebase svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--firebasepercent)) /100);
+}
+.skills li.git svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--gitpercent)) /100);
+}
+.skills li.express svg circle {
+    stroke-dashoffset: calc(440 - (440 * var(--expresspercent)) /100);
+}
+
+
 
 .skills li svg {
     transform: rotate(270deg);
@@ -123,6 +138,17 @@
 .skills li.react .circle .dot {
     transform: rotate(calc(3.6deg * var(--reactpercent)));
 }
+.skills li.firebase .circle .dot {
+    transform: rotate(calc(3.6deg * var(--firebasepercent)));
+}
+.skills li.git .circle .dot {
+    transform: rotate(calc(3.6deg * var(--gitpercent)));
+}
+.skills li.express .circle .dot {
+    transform: rotate(calc(3.6deg * var(--expresspercent)));
+}
+
+
 
 /* dot color */
 .skills li .circle .dot::before {
@@ -130,5 +156,6 @@
     box-shadow: 100 100 100px red;
 }
 .skills li h4 {
+    margin-top: 8px;
     color: white;
 }

@@ -7,8 +7,21 @@ import GlassIcons from './fancy_design/GlassIcons'
 import { SiLinkedin } from 'react-icons/si';
 import { BsTwitterX } from 'react-icons/bs';
 import { MdOutlineEmail } from "react-icons/md";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Hero = () => {
+
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = "https://drive.google.com/uc?export=download&id=11vbQ7_zn_uR5ym66XHzurkXrc0__lMGZ";
+        link.download = "Resume.pdf";
+        link.click();
+        // toast.success("Downloading...", { autoClose: 2000 });
+        setTimeout(() => {
+            toast.success("Downloading...", { autoClose: 800 });
+        }, 1500);
+    };
 
     const items = [
         { icon: <a href="https://www.github.com/shihad-hasan07/" target='_blank'><FaGithubSquare size={32} className='rounded-3xl' /></a>, color: 'indigo', label: 'Github' },
@@ -40,8 +53,10 @@ const Hero = () => {
                         </p>
                         <p className='lg:w-[700px] font-underName mt-7 tracking-wide'>
                             Creative Front-End Developer passionate about building fast, simple, and visually appealing websites. Focused on seamless user experiences and continuous learning.</p>
-                        <p className='mt-7'><Button variant="outlined" endIcon={<FaCloudDownloadAlt />} sx={{ borderColor: "rgb(59, 130, 246)", color: "rgb(155, 130, 246)", transition: "all 0.4s ease-in-out", "&:hover": { backgroundColor: "rgb(59, 130, 246)", color: "white", }, padding: "8px 16px", }}>
-                            Download Resume</Button>
+                        <p className='mt-7'>
+                            {/* <a href="https://drive.google.com/uc?export=view&id=11vbQ7_zn_uR5ym66XHzurkXrc0__lMGZ"> </a> */}
+                            <Button onClick={handleDownload} variant="outlined" endIcon={<FaCloudDownloadAlt />} sx={{ borderColor: "rgb(59, 130, 246)", color: "rgb(155, 130, 246)", transition: "all 0.4s ease-in-out", "&:hover": { backgroundColor: "rgb(59, 130, 246)", color: "white", }, padding: "8px 16px", }}>
+                                Download Resume</Button>
                         </p>
 
                         <div className='flex  justify-between mt-2'>
@@ -50,12 +65,15 @@ const Hero = () => {
                     </div>
 
                     <div className='mt-2 lg:mt-18 home-img flex justify-center items-center'>
+                        {/* w-[90vw] sm:w-[70vw] md:w-[55vw] lg:w-[55vw] xl:w-[27vw] 2xl:w-[30vw]
+                        h-[90vw] sm:h-[70vw] md:h-[55vw] lg:h-[55vw] xl:h-[27vw] 2xl:h-[30vw] */}
                         <div className='img-box  
                         w-[90vw] sm:w-[70vw] md:w-[55vw] lg:w-[55vw] xl:w-[27vw] 2xl:w-[30vw]
                         h-[90vw] sm:h-[70vw] md:h-[55vw] lg:h-[55vw] xl:h-[27vw] 2xl:h-[30vw]
                         '>
                             <div className='img-item '>
-                                <img src="/assets/Adobe Express - file.png" alt=""
+                                {/* <img src="/assets/Adobe Express - file.png" alt="" */}
+                                <img src="/assets/my-img.png" alt=""
                                     className='' />
                             </div>
                         </div>

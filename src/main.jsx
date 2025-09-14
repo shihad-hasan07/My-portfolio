@@ -5,22 +5,35 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Layout/Layout.jsx';
 import Home from './HomePage/Home.jsx';
 
+import { ToastContainer } from 'react-toastify'
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
-    children:[
+    children: [
       {
-        path:'/',
-        element:<Home></Home>
+        path: '/',
+        element: <Home></Home>
       }
     ]
   },
-  
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+
+    <ToastContainer
+      position="top-center"
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClickrtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover={false}
+      theme="dark"
+      transition:Bounce
+    />
   </StrictMode>,
 )
