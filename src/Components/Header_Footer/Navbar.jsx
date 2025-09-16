@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { RiMenu3Fill, RiCloseLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,8 @@ const Navbar = () => {
 
             <div>
                 <p className='text-xl lg:text-xl xl:text-2xl hover:drop-shadow-2xl font-navLogo tracking-widest'>
-                    <a href="#home">{"< Shihad />"}</a>
+            
+                        <a href="#home">{"< Shihad />"}</a>
                 </p>
             </div>
 

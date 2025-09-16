@@ -6,6 +6,7 @@ import Layout from './Layout/Layout.jsx';
 import Home from './HomePage/Home.jsx';
 
 import { ToastContainer } from 'react-toastify'
+import Projects from './Components/Projects.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>
       }
+      // ,
+      // {
+      //   path:'/project',
+      //   element:<Projects></Projects>
+      // }
     ]
   },
 ]);
