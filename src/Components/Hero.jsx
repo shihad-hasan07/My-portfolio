@@ -73,7 +73,7 @@ const Hero = () => {
                         '>
                             <div className='img-item '>
                                 {/* <img src="/assets/Adobe Express - file.png" alt="" */}
-                                <img src="/assets/my-img.png" alt=""
+                                <img src="/assets/Adobe Express - file.png" alt=""
                                     className='' />
                             </div>
                         </div>

@@ -73,7 +73,7 @@ html {
 
 .home-img .img-box .img-item img {
    position: absolute;
-   /* transform: scale(.9); */
+   transform: scale(1.5);
    left: 33px;
    bottom: -130px;
    display: block;

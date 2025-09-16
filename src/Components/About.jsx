@@ -12,7 +12,7 @@ const About = () => {
 
     return (
         <div className='-mt-2' id='about me'>
-            <section className="bg-[#1e0e31] text-white py-20 px-6 sm:px-12 md:px-16 lg:px-28 ">
+            <section className="bg-[#1e0e31] text-white pt-20 px-6 sm:px-12 md:px-16 lg:px-28 ">
                 <div className="max-w-5xl mx-auto">
 
                     {/* Section Heading */}
@@ -30,22 +30,22 @@ const About = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                         className="text-lg text-gray-300 leading-relaxed space-y-6" >
-                        <p>
+                        <p className='font-name'>
                             I am a <b>dedicated and detail-oriented web developer </b> passionate about
                             building engaging and interactive user experiences. With a strong foundation
                             in <b>front-end development</b>, I love bringing ideas to life using modern web technologies.
                         </p>
-                        <p>
+                        <p className='font-name'>
                             My focus is on <b>creating clean, efficient, and visually appealing websites </b> 
                             that provide seamless user experiences across all devices.
                         </p>
                     </motion.div>
 
                     {/* card section */}
-                    <div className="grid  justify-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 xl:gap-6 mt-5">
+                    <div className="grid font-name justify-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 xl:gap-6 mt-5">
                         {skills.map((skill, index) => (
                             <div key={index}
-                                className="w-[350px] p-6 sm:w-auto bg-[#211341] rounded-2xl hover:shadow-[0px_0px_20px_rgba(0,28,100,30.25)] shadow-[#ffffff1c] flex flex-col items-center 
+                                className="w-[320px] p-6 sm:w-auto bg-[#211341] rounded-2xl hover:shadow-[0px_0px_20px_rgba(0,28,100,30.25)] shadow-[#ffffff1c] flex flex-col items-center 
                                 justify-center text-white transition-transform duration-200 hover:scale-[103%]">
 
                                 <div className='w-32 h-28'>
@@ -61,7 +61,7 @@ const About = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="mt-10">
+                        className="mt-10 font-name">
                         <h3 className="text-2xl font-semibold text-purple-400 mb-4">🎓 Education</h3>
 
                         {/* Diploma */}
