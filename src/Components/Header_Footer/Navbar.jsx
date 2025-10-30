@@ -10,7 +10,7 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 100);  // 100px scroll hole true hobe
+            setIsScrolled(window.scrollY > 70);  // 100px scroll hole true hobe
         };
 
         window.addEventListener("scroll", handleScroll);  // Scroll listen korbe
