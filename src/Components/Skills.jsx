@@ -5,7 +5,7 @@ const Skills = () => {
     <div id='skills'>
 
       <div className="skills  bg-[url('/assets/skilbg.png')] bg-[#1e0e31] w-full bg-no-repeat bg-cover h-fit mx-auto
-      pt-28 px-6 sm:px-12 md:px-16 lg:px-28 ">
+      pt-24 px-6 sm:px-12 md:px-16 lg:px-28 ">
         <h2 className="text-4xl font-bold text-purple-400 text-center mb-16">
           Skills
         </h2>

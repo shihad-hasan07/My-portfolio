@@ -8,6 +8,20 @@ const projects = [
         image: "/assets/project-pic/foco.png",
     },
     {
+        title: "Pet-bridge",
+        description: "We connect people and pets through adoption, donation drives, and impact tracking to create a kinder, more compassionate world for animals.",
+        github: "https://github.com/shihad-hasan07/Pet-bridge",
+        live: "https://pet-bridge.web.app/",
+        image: "/assets/project-pic/pet-bridge.png",
+    },
+    {
+        title: "Weekend",
+        description: "We empower learners with flexible online courses, expert guidance, and real-world skills to grow knowledge and careers anytime, anywhere.",
+        github: "https://github.com/shihad-hasan07/weekend",
+        live: "https://weekend-iota.vercel.app/",
+        image: "/assets/project-pic/weekend.png",
+    },
+    {
         title: "Eco-travel",
         description: "We promotes sustainable adventures worldwide with zero plastic, local support, and leave-no-trace principles.",
         github: "https://github.com/shihad-hasan07/Eco-travel",
@@ -25,7 +39,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="relative pt-28 pb-12 px-6 bg-[#1e0e31] h-full" id="projects">
+        <section className="relative pt-24 pb-12 px-6 bg-[#1e0e31] h-full" id="projects">
             <div className="absolute inset-0">
                 <div className="w-full h-full bg-[url('/assets/skilbg.png')] bg-cover bg-center bg-no-repeat rotate-180"></div>
             </div>
@@ -55,7 +69,7 @@ export default function Projects() {
 
                                     {/* Hover overlay button */}
                                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
-                                        <button>
+                                        <button className="hidden md:flex">
                                             <a href={project.live}
                                                 target="_blank"
                                                 className="bg-blue-600 text-white px-5 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition flex items-center gap-2" >
@@ -82,9 +96,19 @@ export default function Projects() {
                                 <div className=" flex flex-col justify-between min-h-[240px]  px-4 pb-5 bg-blue-950 text-white">
                                     <h3 className="text-xl pt-4 font-semibold font-name">{project.title}</h3>
                                     <p className="font-underName my-3">{project.description}</p>
-                                    <button className="mt-4 w-fit bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-                                        <a href={project.github} className="flex items-center gap-2">Code <FaGithub /></a>
-                                    </button>
+                                    <div className="flex  justify-between items-center mt-4">
+                                        <button className=" w-fit bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                                            <a href={project.github} target="_blank" className="flex items-center gap-2">Code <FaGithub /></a>
+                                        </button>
+                                        <button className="flex md:hidden">
+                                            <a href={project.live}
+                                                target="_blank"
+                                                className="bg-blue-600 text-white px-5 py-2 rounded shadow-lg hover:bg-blue-700 transition flex items-center gap-2" >
+                                                <p>Live site</p>
+                                                <FaRegPaperPlane />
+                                            </a>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

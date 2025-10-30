@@ -12,9 +12,12 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Hero = () => {
 
+
+    // google drive link of my resume
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = "https://drive.google.com/uc?export=download&id=11vbQ7_zn_uR5ym66XHzurkXrc0__lMGZ";
+        // link.href = "https://drive.google.com/uc?export=download&id= [........]";   eikhane [..] er jaygay drive er share kore link tar id ta hbe
+        link.href = "https://drive.google.com/uc?export=download&id=1kEW5-3MK7JJMNmb0ezJQ5Klzf_6hlEs0";
         link.download = "Resume.pdf";
         link.click();
         // toast.success("Downloading...", { autoClose: 2000 });
@@ -31,7 +34,8 @@ const Hero = () => {
     ];
 
     return (
-        <div id='home' className='pt-[10px] md:pt-[15px] lg:pt-[40px] xl:pt-[50px]'>
+        // <div id='home' className='pt-[10px] md:pt-[15px] lg:pt-[40px] xl:pt-[50px] bg-[#160d1e]'>
+        <div id='home' className=' bg-[#160d1]'>
             <ClickSpark
                 sparkColor='#fff'
                 sparkSize={10}
